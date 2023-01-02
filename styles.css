@@ -7,8 +7,9 @@
     margin-bottom: 2em;
     text-align: center;
   }
-  
- 
+  body {
+    margin: 2em;
+  }
   
   /* Simple Responsive Framework. */
   .row {
@@ -17,10 +18,11 @@
   
   /********** Large devices only **********/
   
-  @media (min-width: 992px) {
-    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+  @media (min-width: 992px) 
+  {
+    /* .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
       float: left;
-    }
+    } */
     .col-lg-1 {
       width: 8.33%;
     }
@@ -57,14 +59,26 @@
     .col-lg-12 {
       width: 100%;
     }
+    .box {
+      background-color: #adabab;
+      border: 1px solid black;
+      padding: 8px;
+      position: relative;
+      float: left;
+      margin: 1em;
   }
+  .disLg{
+    display: flex;
+  }
+}
+
 
   /* Medium devices only */
 
   @media (min-width: 768px) and (max-width: 991px) {
-    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    /* .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
       float: left;
-    }
+    } */
     .col-md-1 {
       width: 8.33%;
     }
@@ -101,6 +115,33 @@
     .col-md-12 {
       width: 100%;
     }
+    .box1 {
+      background-color: #adabab;
+      border: 1px solid black;
+      padding: 8px;
+      position: relative;
+      float: left;
+      left: -14px;
+  }
+  .box2 {
+    background-color: #adabab;
+    border: 1px solid black;
+    padding: 8px;
+    position: relative;
+    float: right;
+    bottom: -1px;
+    right: -12px;
+}
+.box3 {
+    background-color: #adabab;
+    border: 1px solid black;
+    padding: 8px;
+    position: relative;
+    float: right;
+    bottom: -22px;
+    right: -10px;
+    width: 779px;
+}
   }
 
   /* small devices only  */
@@ -145,10 +186,58 @@
     .col-sm-12 {
       width: 100%;
     }
-  }
 
-.box {
-    background-color: silver;
-    border: 1px solid black;
-    padding: 8px;
+    .box {
+      background-color: #adabab;
+      border: 1px solid black;
+      padding: 8px;
+      position: relative;
+      float: left;
+      margin-bottom: 1em;
+  }
+ 
 }
+
+
+.boxChic{
+ background-color: burlywood;
+ border: 1px solid black;
+ padding: 10px;
+ float: right;
+ position: relative;
+ top: -24px;
+ right: -8px;
+ width: 150px;
+ font-weight: bold;
+ text-align: center;
+}
+
+.boxBeef{
+  background-color:#f7b39a;
+  border: 1px solid black;
+  padding: 10px;
+  float: right;
+  position: relative;
+  top: -24px;
+  right: -8px;
+  width: 150px;
+  font-weight: bold;
+  text-align: center;
+ }
+
+ .boxSushi{
+  background-color:#d7c9f1;
+  border: 1px solid black;
+  padding: 10px;
+  float: right;
+  position: relative;
+  top: -24px;
+  right: -8px;
+  width: 150px;
+  font-weight: bold;
+  text-align: center;
+ }
+ .alignText {
+    margin-top: 38px;
+    text-align: left;
+ }
